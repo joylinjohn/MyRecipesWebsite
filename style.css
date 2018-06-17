@@ -32,7 +32,7 @@ ul {
 li { 
     display: inline;
     font-size: 14px;
-    padding: 10px;
+    padding: 5px;
     
 }
 
@@ -195,6 +195,9 @@ DEVICES > 600px
 ----------------*/
 @media screen and (min-width: 600px) {
     
+    body {
+        width: 100%;
+    }
     
     header li {
         font-size: 16px;
