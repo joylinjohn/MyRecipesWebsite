@@ -1,3 +1,7 @@
+/*---------------
+MOBILE FIRST
+----------------*/
+
 html {
     background-color: white;
 }
@@ -5,7 +9,7 @@ html {
 body {
     background-color: #ede6e6;
     margin: 0 auto;
-    width: 960px;
+    width: 100%;
     font-family: arial, helvetica, sans-serif;
 }
 
@@ -14,6 +18,7 @@ a {
     color: #373535;
 }
 
+    
 /* HEADER */
 header{
     height: 150px;
@@ -26,49 +31,59 @@ ul {
 
 li { 
     display: inline;
+    font-size: 14px;
     padding: 10px;
-    font-size: 16px;
     
 }
 
-header li:first-child {
+header li {
     border-right: 1px solid #373535;
+    font-size: 2.8vw;
+}
+
+header li:last-child {
+    border-right: none;
 }
 
 .left {
-    width: 320px;
+    width: 50%;
     float: left;
+    padding-top: 125px;
 }
 
 .left ul {
-    padding-left: 30px;
-    padding-top: 90px;
+    padding-left: 2%;
+    padding-top: 5%;
 }
 .right {
-    width: 320px;
-    float: right
+    width: 50%;
+    float: right;
+    padding-top: 125px;
 }
 .right ul {
     float:right;
-    padding-right: 30px;
-    padding-top: 90px;
+    padding-right: 2%;
+    padding-top: 5%;
 }
 
 #logo {
-    width: 320px;
-    float: left;
+    position: absolute;
+    width: 100%;
     text-align: center;
     color: #b46363;
     font-size: 36px;
+    
 }
 
 #logo p {
-    margin: 0 
+    margin: 0 ;
+    
 }
 
 #main {
     background-image: url('images/dishes.jpg');
-    height: 438px;
+    height: 200px;
+    margin-top: 40px;
 }
 
 #main p {
@@ -126,7 +141,7 @@ form {
 
 .box {
     position: relative;
-    float: left;
+    text-align: center;
     margin: 15px 0;
 }
 
@@ -173,4 +188,64 @@ footer li:last-child {
 footer img{
     display: block;
     margin: 0 auto;
+}
+
+/*---------------
+DEVICES > 600px
+----------------*/
+@media screen and (min-width: 600px) {
+    body {
+        width: 100%;
+    }
+    
+    .left {
+        width: 50%;
+        float: left;
+    }
+
+    .left ul {
+        padding-left: 2%;
+        padding-top: 5%;
+    }
+    .right {
+        width: 50%;
+        float: right;
+    }
+    .right ul {
+        float:right;
+        padding-right: 2%;
+        padding-top: 5%;
+    }
+
+    #logo {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        color: #b46363;
+        font-size: 36px;
+        padding-left: 5%;
+    }
+
+    #logo p {
+        margin: 0 ;
+    }
+    
+  
+
+
+}
+
+/*---------------
+DEVICES > 900px
+----------------*/
+@media screen and (min-width: 600px) {
+    
+    body {
+        background-color: #ede6e6;
+        margin: 0 auto;
+        width: 960px;
+        font-family: arial, helvetica, sans-serif;
+    }
+    
+    
 }
