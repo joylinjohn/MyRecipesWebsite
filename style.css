@@ -48,22 +48,22 @@ header li:last-child {
 .left {
     width: 50%;
     float: left;
-    padding-top: 125px;
+    
 }
 
 .left ul {
+    float: left;
     padding-left: 2%;
-    padding-top: 5%;
+    padding-top: 135px;
 }
 .right {
     width: 50%;
     float: right;
-    padding-top: 125px;
 }
 .right ul {
     float:right;
     padding-right: 2%;
-    padding-top: 5%;
+    padding-top: 135px;
 }
 
 #logo {
@@ -194,57 +194,92 @@ footer img{
 DEVICES > 600px
 ----------------*/
 @media screen and (min-width: 600px) {
-    body {
-        width: 100%;
-    }
     
-    .left {
-        width: 50%;
-        float: left;
-    }
-
-    .left ul {
-        padding-left: 2%;
-        padding-top: 5%;
-    }
-    .right {
-        width: 50%;
-        float: right;
-    }
-    .right ul {
-        float:right;
-        padding-right: 2%;
-        padding-top: 5%;
-    }
-
-    #logo {
-        position: absolute;
-        width: 100%;
-        text-align: center;
-        color: #b46363;
-        font-size: 36px;
-        padding-left: 5%;
-    }
-
-    #logo p {
-        margin: 0 ;
-    }
     
-  
+    header li {
+        font-size: 16px;
+    }
 
 
 }
 
 /*---------------
-DEVICES > 900px
+DEVICES > 960px
 ----------------*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 960px) {
     
+    
+
     body {
-        background-color: #ede6e6;
-        margin: 0 auto;
         width: 960px;
-        font-family: arial, helvetica, sans-serif;
+    }
+    
+    #main {
+        margin-top: 10px;
+    }
+    li { 
+        padding: 10px;
+        font-size: 16px;
+
+    }
+
+    header li:first-child {
+        border-right: 1px solid #373535;
+    }
+    
+    header li {
+        font-size: 16px;
+    }
+
+    .left {
+        width: 320px;
+    }
+
+    .left ul {
+        padding-left: 30px;
+        padding-top: 90px;
+    }
+    .right {
+        width: 320px;
+    }
+    .right ul {
+        float:right;
+        padding-right: 30px;
+        padding-top: 90px;
+    }
+
+    #logo {
+        position: static;
+        width: 320px;
+        float: left;
+        text-align: center;
+        font-size: 36px;
+    }
+
+
+    #main {
+        height: 438px;
+    }
+
+    #main p {
+        margin: 0;
+        padding-top: 20px;
+        color: #b46363;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+
+   .box {
+        position: relative;
+        float: left;
+        margin: 15px 0;
+    }
+
+    .box img {
+        position: relative;
+        z-index: 1;
+        margin-left: 15px;
     }
     
     
